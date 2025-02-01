@@ -7,12 +7,13 @@ const SelectRole = () => {
 
   return (
     <div className="landing-main">
-      <h1>Select Role</h1>
+      <h1>Select Role,</h1>
+      <p>to Login</p>
 
       <div className="action-buttons">
-        <button className="landing-login-button">Mentor</button>
-        <button className="landing-login-button">Mentee</button>
-        <button className="landing-login-button">Admin</button>
+        <button className="landing-login-button" onClick={() => navigate("/MentorLogin")} >Mentor</button>
+        <button className="landing-login-button" onClick={() => navigate("/MenteeLogin")}>Mentee</button>
+        <button className="landing-login-button" onClick={() => navigate("/AdminLogin")}>Admin</button>
       </div>
     </div>
   );

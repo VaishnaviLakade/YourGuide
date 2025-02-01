@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Image from "../assets/image.png";
+import Image from "../assets/register2.jpg";
 import Logo from "../assets/logo.png";
 import GoogleSvg from "../assets/icons8-google.svg";
 import { FaEye } from "react-icons/fa6";
@@ -71,7 +71,7 @@ const Login = () => {
             <img src={Logo} alt="" />
           </div>
           <div className="register-center">
-            <h2>Welcome to our website!</h2>
+            <h2>Welcome to our website! mentee</h2>
             <p>Please enter your details</p>
             <form onSubmit={handleRegisterSubmit}>
             <input type="text" placeholder="Name" name="name" required={true} />

@@ -8,6 +8,10 @@ import {
   Logout,
   MenteeRegister,
   SelectRole,
+  AdminLogin,
+  SelectRoleRegister,
+  MentorRegister,
+ 
 } from "./pages";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -26,15 +30,15 @@ const router = createBrowserRouter([
       },
       {
         path: "MenteeLogin",
-        element: <MentorLogin />,
+        element: <MenteeLogin />,
       },
       {
-        path: "mentee-register",
+        path: "MenteeRegister",
         element: <MenteeRegister />,
       },
       {
-        path: "mentor-register",
-        element: <MenteeRegister />,
+        path: "MentorRegister",
+        element: <MentorRegister />,
       },
       {
         path: "dashboard",
@@ -48,6 +52,19 @@ const router = createBrowserRouter([
         path: "SelectRole",
         element: <SelectRole />,
       },
+      {
+        path: "AdminLogin",
+        element: <AdminLogin/>
+      },
+      {
+        path: "SelectRoleRegister",
+        element: <SelectRoleRegister/>
+      },
+      {
+        path: "MentorRegister",
+        element :<MentorRegister/>
+      },
+      
     ],
   },
 ]);

@@ -5,7 +5,8 @@
   
   .register-left{
     flex-grow: 1;
-    height: 100vh;
+    height: 120vh;
+    /* height: 100%; */
     background-color: #E9E9E9;
   
     display: flex;
@@ -14,7 +15,8 @@
   }
   
   .register-left img{
-    width: 400px;
+    width: 500px;
+    height: auto;
   }
   
   .register-right{
@@ -44,7 +46,7 @@
   
   .register-logo{
     align-self: center;
-    padding-top: 50px;
+    padding-top: 100px;
   }
   
   .register-center{
@@ -184,5 +186,12 @@
   
   .register-bottom-p a:hover{
     text-decoration: underline;
+  }
+  
+  .register-logo img {
+    width: 100%; /* Make logo take full width of its container */
+    max-width: 200px; /* Adjust max width if needed */
+    height: 50px; /* Keep aspect ratio intact */
+    margin-top: 5px;
   }
   
