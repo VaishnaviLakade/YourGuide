@@ -1,16 +1,32 @@
-import React from 'react'
+import React from "react";
 import "../styles/Landing.css";
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
-  return (
-    <div className='landing-main'>
-    <h1>Landing Page</h1>
-    <p>Hello and welcome!</p>
-    <Link to="/login" className="landing-login-button">Login</Link>
-    <Link to="/register" className="landing-register-button">Register</Link>
-  </div>
-  )
-}
+  const navigate = useNavigate();
 
-export default Landing
+  return (
+    <div className="landing-main">
+      <h1>Landing Page</h1>
+      <p>Hello and welcome!</p>
+
+      {/* Login and Register Buttons */}
+      <div className="action-buttons">
+        <button
+          onClick={() => navigate("/SelectRole")} // Redirect to role selection page
+          className="landing-login-button"
+        >
+          Login
+        </button>
+        <button
+          onClick={() => navigate("/SelectRole")} // Redirect to registration page
+          className="landing-register-button"
+        >
+          Register
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Landing;

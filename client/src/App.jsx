@@ -1,7 +1,15 @@
-
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Dashboard, HomeLayout, Landing, Login, Logout, Register } from "./pages";
-import { ToastContainer, toast } from 'react-toastify';
+import {
+  Dashboard,
+  HomeLayout,
+  Landing,
+  MentorLogin,
+  MenteeLogin,
+  Logout,
+  MenteeRegister,
+  SelectRole,
+} from "./pages";
+import { ToastContainer, toast } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -13,12 +21,20 @@ const router = createBrowserRouter([
         element: <Landing />,
       },
       {
-        path: "login",
-        element: <Login />,
+        path: "MentorLogin",
+        element: <MentorLogin />,
       },
       {
-        path: "register",
-        element: <Register />,
+        path: "MenteeLogin",
+        element: <MentorLogin />,
+      },
+      {
+        path: "mentee-register",
+        element: <MenteeRegister />,
+      },
+      {
+        path: "mentor-register",
+        element: <MenteeRegister />,
       },
       {
         path: "dashboard",
@@ -27,20 +43,22 @@ const router = createBrowserRouter([
       {
         path: "logout",
         element: <Logout />,
-      }
+      },
+      {
+        path: "SelectRole",
+        element: <SelectRole />,
+      },
     ],
   },
 ]);
 
 function App() {
-
-
   return (
     <>
-        <RouterProvider router={router} />
-        <ToastContainer position='top-center' />
+      <RouterProvider router={router} />
+      <ToastContainer position="top-center" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
