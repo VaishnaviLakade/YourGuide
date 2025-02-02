@@ -7,3 +7,5 @@ export { default as MenteeRegister } from "./MenteeRegister";
 export { default as SelectRole } from "./SelectRole";
 export { default as MentorRegister } from "./MentorRegister";
 export { default as Logout } from "./Logout";
+export { default as AdminLogin } from "./AdminLogin";
+export { default as SelectRoleRegister } from "./SelectRoleRegister";

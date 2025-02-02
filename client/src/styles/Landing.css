@@ -1,42 +1,20 @@
+
+
 .landing-main {
   font-size: 30px;
   height: 100vh;
   width: 100%;
 
+  color:navy;
+  text-shadow: 2px 2px 5px rgba(248, 246, 246, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
 
-.role-selection {
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
+  background-image: url('./assets/bg-img.png');
 
-.role-label {
-  font-size: 20px;
-  font-weight: 600;
-  color: black;
 }
-
-.role-dropdown {
-  padding: 10px;
-  border-radius: 30px;
-  border: 3px solid black;
-  font-size: 20px;
-  font-weight: 600;
-  width: 500px;
-  text-align: center;
-  cursor: pointer;
-  background: white; /* White background */
-  color: black; /* Black text */
-  transition: background 1s linear 0ms, color 500ms linear 0ms;
-}
-
 
 
 .action-buttons {
@@ -48,10 +26,13 @@
 
 .landing-login-button,
 .landing-register-button {
-  background: black;
+  background: navy;
   color: white;
-  border: 3px solid black;
+  border: 3px solid navy;
   transition: background 1s linear 0ms, color 500ms linear 0ms;
+  
+  text-shadow: 2px 2px 5px rgba(250, 250, 250, 0.6);
+  box-shadow: 3px 3px 10px rgba(8, 3, 3, 0.6);
 
   width: 500px;
   padding: 16px;
@@ -67,6 +48,7 @@
 
 .landing-login-button:hover,
 .landing-register-button:hover {
-  color: #333;
+  color: navy;
   background-color: white;
+ 
 }
